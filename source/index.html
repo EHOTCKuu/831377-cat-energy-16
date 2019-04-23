@@ -3,23 +3,26 @@
   <head>
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
+      <div class="wrapper">
     <header class="page-header">
       <a class="page-header__logo"><img class="page-header__logo-image" src="../img/logo-mobile.svg" alt="Логотип «Кэт энерджи»"></a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="page-link">Главная</a>
+            <li class="site-list__item site-list__item--active index-active">
+              <a class="page-link link-index">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="page-link" href="catalog.html">Каталог продукции</a>
+              <a class="page-link link-index" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a  class="page-link" href="form.html">Подбор программы</a>
+              <a  class="page-link link-index" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -85,5 +88,6 @@
         </div>
       </div>
     </footer>
+    </div>
   </body>
 </html>
