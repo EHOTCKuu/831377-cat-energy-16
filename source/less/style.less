@@ -7,6 +7,7 @@
     url("../fonts/oswaldmedium.woff2") format("woff2");
 }
 
+@import "normalize.less";
 @import "blocks/page-header.less";
 @import "blocks/page-main.less";
 @import "blocks/page-footer.less";
@@ -35,6 +36,17 @@ img {
   height: auto;
 }
 
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
 
 @media (min-width: @desktop-width) {
   .wrapper {
