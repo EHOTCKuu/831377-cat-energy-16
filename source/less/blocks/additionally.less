@@ -12,7 +12,7 @@
 
 .gift-text {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   width: 166px;
   padding-top: 65px;
@@ -21,7 +21,7 @@
 }
 
 .gift-text::before {
-  content:"";
+  content: "";
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   width: 55px;
@@ -29,7 +29,6 @@
   display: block;
   margin-left: 58px;
   padding-bottom: 60px;
-
 }
 
 .additionally__item {
@@ -42,14 +41,13 @@
   grid-template-columns: 140px 140px;
   -ms-grid-rows: 29px 30px 40px;
   grid-template-rows: 29px 30px 40px;
-              grid-template-areas:
+  grid-template-areas:
     "red red"
     "yellow green"
     "blue blue";
   margin-bottom: 12px;
   border-bottom: 1px solid  #cdcdcd;
   padding-bottom: 17px;
-
 }
 
 .additionally-unit {
@@ -69,7 +67,7 @@
   -ms-grid-column: 1;
   grid-area: yellow;
   text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   margin-left: -2px;
 }
@@ -79,7 +77,7 @@
   -ms-grid-column: 2;
   grid-area: green;
   text-align: right;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -89,7 +87,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: blue;
-  border:none;
+  border: none;
   background-color: #68b738;
   text-transform: uppercase;
   text-decoration: none;
@@ -99,11 +97,12 @@
   padding-top: 10px;
   padding-left: 1px;
 }
-.additionally-button:hover{
+
+.additionally-button:hover {
   background-color: #589b2ff3;
 }
 
-.additionally-button:active{
+.additionally-button:active {
   background-color: #589b2ff3;
   color: rgba(255, 255, 255, 0.418);
 }
@@ -121,7 +120,7 @@
 }
 
 .additionally__name::after {
-  content:"";
+  content: "";
   border: 1.5px solid #68b738;
   width: 55px;
   display: inline-block;
@@ -130,9 +129,7 @@
   margin-right: -30px;
 }
 
-@media (min-width: @tablet-width){
-
-
+@media (min-width: @tablet-width) {
   .additionally__name {
     font-size: 36px;
     width: 670px;
@@ -170,7 +167,7 @@
     grid-template-columns: 240px 168px 130px 95px;
     -ms-grid-rows: 46px 40px;
     grid-template-rows: 46px 40px;
-                grid-template-areas:
+    grid-template-areas:
       "red red yellow green"
       "blue blue blue blue";
     margin-bottom: 0;
@@ -182,10 +179,10 @@
     border-bottom: none;
     padding-right: 36px;
   }
+
   .additionally-unit {
     font-size: 20px;
     padding-left: 1px;
-
   }
 
   .additionally__item:nth-child(5n) {
@@ -197,14 +194,15 @@
     padding-top: 6px;
     text-align: right;
   }
+
   .additionally-price {
     font-size: 16px;
     padding-top: 6px;
   }
-  .additionally-button {
 
+  .additionally-button {
     padding-top: 12px;
-    padding-left:0;
+    padding-left: 0;
     margin-left: -1px;
   }
 
@@ -217,27 +215,25 @@
     margin-right: 0;
     margin-top: 69px;
     margin-bottom: 6px;
-
-
   }
 
-.gift-text {
- margin: 0;
- padding: 0;
- height: 120px;
-margin-right: 20px;
-text-align: left;
-margin-left: 424px;
-padding-top: 12px;
-}
+  .gift-text {
+    margin: 0;
+    padding: 0;
+    height: 120px;
+    margin-right: 20px;
+    text-align: left;
+    margin-left: 424px;
+    padding-top: 12px;
+  }
 
-.gift-text::before {
-  padding: 0;
-  margin: 0;
-  position: relative ;
-  top: 53px;
-  left: -334px;
-}
+  .gift-text::before {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 53px;
+    left: -334px;
+  }
 
   .additionally-unit {
     -ms-grid-row: 1;
@@ -262,10 +258,8 @@ padding-top: 12px;
   }
 }
 
-@media (min-width: @desktop-width){
-
+@media (min-width: @desktop-width) {
   .additionally__name {
-
     width: 1270px;
     margin-left: 39px;
     margin-top: 44px;
@@ -284,14 +278,14 @@ padding-top: 12px;
   .additionally__name::before {
     display: none;
   }
+
   .additionally__item {
     width: 896px;
-    -ms-grid-columns: 327px 242px 77px 245px;
+    -ms-grid-columns: 327px 242px 81px 245px;
     grid-template-columns: 327px 242px 81px 245px;
     -ms-grid-rows: 40px;
     grid-template-rows: 40px;
-                grid-template-areas:
-      "red yellow green blue";
+    grid-template-areas: "red yellow green blue";
     border-left: none;
     border-right: none;
     padding-bottom: 16px;
@@ -300,23 +294,24 @@ padding-top: 12px;
     padding-left: 0;
     border-bottom: none;
     padding-right: 0;
-
   }
-
 
   .additionally-pack {
     padding-top: 15px;
-text-align: left;
+    text-align: left;
   }
+
   .additionally-price {
     padding-top: 15px;
     text-align: left;
   }
+
   .additionally-button {
     padding-left: 1px;
     padding-top: 12px;
     display: block;
   }
+
   .additionally-unit {
     padding-top: 9px;
   }
@@ -327,61 +322,60 @@ text-align: left;
     background-size: 86%;
     width: 308px;
     height: 290px;
-    margin-left: 59px;;
+    margin-left: 59px;
     margin-right: 0;
     margin-top: 0;
     margin-bottom: 6px;
     display: block;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
-
     }
   }
 
-.additionally {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 80px;
+  .additionally {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 80px;
+  }
 
-}
-.gift-text {
- margin: 0;
- padding: 0;
- height: 280px;
-margin-right: 20px;
-text-align: center;
-margin-left: 38px;
-padding-top: 127px;
-}
+  .gift-text {
+    margin: 0;
+    padding: 0;
+    height: 280px;
+    margin-right: 20px;
+    text-align: center;
+    margin-left: 38px;
+    padding-top: 127px;
+  }
 
-.gift-text::before {
-  padding: 0;
-  margin: 0;
-  top: -62px;
-  left: 57px;
-}
+  .gift-text::before {
+    padding: 0;
+    margin: 0;
+    top: -62px;
+    left: 57px;
+  }
+
   .additionally-unit {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
-
   }
+
   .additionally-pack {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
-
   }
+
   .additionally-price {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
-
   }
+
   .additionally-button {
     -ms-grid-row: 1;
     -ms-grid-column: 4;
     -ms-grid-column-span: 1;
-
   }
-
 }
