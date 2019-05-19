@@ -27,7 +27,6 @@
   width: 281px;
   padding-left: 19px;
   padding-right: 20px;
-
 }
 
 .name-form {
@@ -37,7 +36,7 @@
   padding-left: 14px;
   padding-right: 10px;
   text-transform: uppercase;
-  border:1px solid #e7e7e7;
+  border: 1px solid #e7e7e7;
   font-family: "Oswald", "Arial", sans-serif;
   margin-top: 27px;
 }
@@ -48,7 +47,7 @@
   margin-left: 13px;
   margin-top: 14px;
   text-transform: uppercase;
-  border:1px solid #e7e7e7;
+  border: 1px solid #e7e7e7;
   padding-left: 14px;
   padding-right: 10px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -60,7 +59,7 @@
   margin-left: 12px;
   margin-top: 14px;
   text-transform: uppercase;
-  border:1px solid #e7e7e7;
+  border: 1px solid #e7e7e7;
   padding-left: 14px;
   padding-right: 10px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -82,14 +81,14 @@
 }
 
 .radio-control:active {
-opacity: 0.5;
+  opacity: 0.5;
 }
-.radio-control:hover::before{
+
+.radio-control:hover::before {
   border: 1px solid rgba(0, 0, 0, 0.322);
 }
 
-
-.radio-control:before {
+.radio-control::before {
   content: "";
   display: inline-block;
   width: 27px;
@@ -102,10 +101,7 @@ opacity: 0.5;
   border-radius: 20px;
 }
 
-
-
-
-.radionone:checked +.radio-control:before {
+.radionone:checked + .radio-control::before {
   content: "\2022";
   color: #68b738;
   font-size: 51px;
@@ -114,8 +110,8 @@ opacity: 0.5;
 }
 
 .program-type {
-  border-top:1px solid #e7e7e7;
-  border-bottom:1px solid #e7e7e7;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
   margin-top: 23px;
   width: 280px;
   padding-left: 20px;
@@ -135,7 +131,7 @@ opacity: 0.5;
 }
 
 .contact::after {
-  content:"";
+  content: "";
   border: 1.5px solid #68b738;
   width: 96px;
   display: block;
@@ -144,7 +140,7 @@ opacity: 0.5;
   margin-top: -34px;
 }
 
-.subscribe{
+.subscribe {
   width: 281px;
   padding-left: 19px;
   padding-right: 20px;
@@ -157,7 +153,7 @@ opacity: 0.5;
   height: 41px;
   margin-top: 15px;
   text-transform: uppercase;
-  border:1px solid #e7e7e7;
+  border: 1px solid #e7e7e7;
   padding-left: 14px;
   padding-right: 10px;
   font-size: 16px;
@@ -174,7 +170,7 @@ opacity: 0.5;
   margin-left: 7px;
   margin-top: 14px;
   text-transform: uppercase;
-  border:1px solid #e7e7e7;
+  border: 1px solid #e7e7e7;
   padding-left: 14px;
   padding-right: 10px;
   font-size: 16px;
@@ -184,9 +180,6 @@ opacity: 0.5;
   background-position: 170px 12px;
   background-size: 20px 20px;
 }
-
-
-
 
 .comment {
   font-size: 24px;
@@ -199,7 +192,7 @@ opacity: 0.5;
 }
 
 .comment::after {
-  content:"";
+  content: "";
   border: 1.5px solid #68b738;
   width: 154px;
   display: block;
@@ -212,7 +205,7 @@ opacity: 0.5;
   width: 254px;
   margin-top: 22px;
   text-transform: uppercase;
-  border:1px solid #e7e7e7;
+  border: 1px solid #e7e7e7;
   padding-left: 14px;
   padding-right: 10px;
   font-size: 16px;
@@ -226,16 +219,16 @@ opacity: 0.5;
   outline: none;
 }
 
-.input-form:hover{
+.input-form:hover {
   border-color: rgba(184, 182, 182, 0.74);
 }
 
-.input-form:focus{
-   border-color: black;
+.input-form:focus {
+  border-color: black;
 }
 
-.input-form:invalid{
-   border-color:red;
+.input-form:invalid {
+  border-color: red;
 }
 
 .tel:focus {
@@ -248,7 +241,6 @@ opacity: 0.5;
   background-repeat: no-repeat;
 }
 
-
 .tel:invalid {
   background-image: url("../img/icon-phone-error.svg");
   background-repeat: no-repeat;
@@ -260,7 +252,7 @@ opacity: 0.5;
 }
 
 .further::after {
-  content:"";
+  content: "";
   border: 1.5px solid #68b738;
   width: 134px;
   display: block;
@@ -268,6 +260,7 @@ opacity: 0.5;
   margin-right: -30px;
   margin-top: -12px;
 }
+
 .further {
   font-size: 24px;
   text-transform: none;
@@ -284,12 +277,13 @@ opacity: 0.5;
   margin-bottom: 24px;
   cursor: pointer;
 }
-.label-check:hover .label-check__new-input{
+
+.label-check:hover .label-check__new-input {
   border: 1px solid #22222257;
 }
 
 .label-check:active {
-opacity: 0.4;
+  opacity: 0.4;
 }
 
 .further-items {
@@ -307,16 +301,14 @@ opacity: 0.4;
   width: 28px;
   height: 28px;
   border: 1px solid #e7e7e7;
-
 }
-
 
 .label-check__input:checked + .label-check__new-input {
   background: url("../img/icon-tick.svg") no-repeat center;
   background-size: 21px 16px;
 }
 
-.button-form{
+.button-form {
   padding: 10px 73px;
   font-size: 16px;
   background-color: #68b738;
@@ -330,17 +322,18 @@ opacity: 0.4;
   margin-left: 21px;
   cursor: pointer;
 }
-.button-form:hover{
+
+.button-form:hover {
   background-color: #589b2ff3;
 }
 
-.button-form:active{
+.button-form:active {
   background-color: #589b2ff3;
   color: rgba(255, 255, 255, 0.418);
 }
 
 .footnote {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   text-transform: none;
   text-align: center;
@@ -348,8 +341,7 @@ opacity: 0.4;
   margin-bottom: 32px;
 }
 
-@media (min-width: @tablet-width){
-
+@media (min-width: @tablet-width) {
   .page-form {
     text-transform: uppercase;
     max-width: 768px;
@@ -368,6 +360,7 @@ opacity: 0.4;
     width: 360px;
     line-height: 1.5;
   }
+
   .quest {
     padding-left: 71px;
     padding-right: 66px;
@@ -410,7 +403,7 @@ opacity: 0.4;
     height: 194px;
   }
 
-  .radio-control:before {
+  .radio-control::before {
     width: 38px;
     height: 38px;
     border-radius: 50%;
@@ -424,7 +417,7 @@ opacity: 0.4;
     margin-left: 16px;
   }
 
-  .radionone:checked +.radio-control:before {
+  .radionone:checked + .radio-control::before {
     font-size: 75px;
     line-height: 30px;
   }
@@ -447,7 +440,7 @@ opacity: 0.4;
   }
 
   .contact::before {
-    content:"";
+    content: "";
     border: 1.5px solid #68b738;
     width: 28px;
     display: inline-block;
@@ -492,6 +485,7 @@ opacity: 0.4;
     margin-top: 62px;
     height: 43px;
   }
+
   .comment::after {
     width: 464px;
     display: inline-block;
@@ -502,7 +496,7 @@ opacity: 0.4;
   }
 
   .comment::before {
-    content:"";
+    content: "";
     border: 1.5px solid #68b738;
     width: 28px;
     display: inline-block;
@@ -510,6 +504,7 @@ opacity: 0.4;
     margin-right: 39px;
     margin-bottom: 9px;
   }
+
   .comment-place {
     font-size: 20px;
     width: 601px;
@@ -525,8 +520,8 @@ opacity: 0.4;
     margin-left: 50px;
     margin-top: 60px;
     height: 43px;
-
   }
+
   .further::after {
     width: 431px;
     display: inline-block;
@@ -554,11 +549,11 @@ opacity: 0.4;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     width: 660px;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .label-check__new-input {
@@ -594,7 +589,7 @@ opacity: 0.4;
   }
 }
 
-@media (min-width: @desktop-width){
+@media (min-width: @desktop-width) {
   .page-form {
     max-width: 1300px;
     padding-bottom: 37px;
@@ -645,6 +640,7 @@ opacity: 0.4;
     margin-left: 45px;
     padding-left: 25px;
   }
+
   .contact {
     font-size: 36px;
     width: 1161px;
@@ -672,10 +668,9 @@ opacity: 0.4;
   }
 
   .email {
-
     width: 455px;
     margin-right: 74px;
-    margin-left:17px;
+    margin-left: 17px;
     padding-left: 18px;
     background-position: 447px 19px;
     margin-top: 15px;
@@ -690,7 +685,6 @@ opacity: 0.4;
   }
 
   .comment {
-
     width: 1170px;
     margin-left: 20px;
     margin-top: 64px;
@@ -721,13 +715,11 @@ opacity: 0.4;
   }
 
   .further {
-
     width: 1070px;
     margin-left: 20px;
     margin-top: 62px;
-
-
   }
+
   .further::after {
     width: 1011px;
     margin-bottom: 9px;
@@ -740,11 +732,9 @@ opacity: 0.4;
     margin-left: -112px;
   }
 
-
   .further-items {
     margin-left: 30px;
     width: 1181px;
-
   }
 
   .label-check {
@@ -762,7 +752,6 @@ opacity: 0.4;
   }
 
   .footnote {
-
     margin-left: 79px;
     font-size: 16px;
     margin-top: 21px;
