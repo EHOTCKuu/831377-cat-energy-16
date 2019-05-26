@@ -1,6 +1,10 @@
 .page-form {
   text-transform: uppercase;
-  max-width: 320px;
+}
+
+.form-reach {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-name {
@@ -9,16 +13,20 @@
   font-size: 36px;
   font-weight: 100;
   text-transform: none;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .appeal {
   font-weight: 100;
   font-size: 14px;
   margin-top: 36px;
-  width: 240px;
+  width: 260px;
   line-height: 1.3;
-  padding-left: 20px;
   padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .quest {
@@ -27,6 +35,8 @@
   width: 281px;
   padding-left: 19px;
   padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .name-form {
@@ -75,8 +85,7 @@
   padding-left: 45px;
   margin-right: 15px;
   font-size: 16px;
-  margin-top: 27px;
-  margin-bottom: -3px;
+  margin-top: 25px;
   cursor: pointer;
 }
 
@@ -110,42 +119,50 @@
 }
 
 .program-type {
+  padding-bottom: 26px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+}
+
+.long-border {
+  margin-top: 23px;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
-  margin-top: 23px;
-  width: 280px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 30px;
+  width: 100%;
 }
 
 .contact {
   font-size: 24px;
   text-transform: none;
   font-weight: 100;
-  width: 280px;
   padding-left: 19px;
-  padding-right: 20px;
   margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
   line-height: 1;
 }
 
 .contact::after {
   content: "";
-  border: 1.5px solid #68b738;
-  width: 96px;
+  border-bottom: 3px solid #68b738;
+  margin-bottom: 31px;
+  right: 0;
+  width: calc(100% - 120px);
+  margin-right: auto;
+  margin-left: 12px;
   display: block;
-  margin-left: 202px;
-  margin-right: -30px;
-  margin-top: -34px;
 }
 
 .subscribe {
   width: 281px;
   padding-left: 19px;
   padding-right: 20px;
-  margin-top: 50px;
+  margin-top: 18px;
   text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .email {
@@ -185,25 +202,27 @@
   font-size: 24px;
   text-transform: none;
   font-weight: 100;
-  width: 281px;
   padding-left: 19px;
-  padding-right: 20px;
-  margin-top: 27px;
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .comment::after {
   content: "";
-  border: 1.5px solid #68b738;
-  width: 154px;
+  border-bottom: 3px solid #68b738;
+  width: 100%;
+  margin-bottom: 9px;
+  margin-left: 23px;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   display: block;
-  margin-left: 144px;
-  margin-right: -30px;
-  margin-top: -12px;
 }
 
 .comment-place {
   width: 254px;
-  margin-top: 22px;
+  margin-top: 13px;
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
   padding-left: 14px;
@@ -211,8 +230,15 @@
   font-size: 16px;
   font-family: "Oswald", "Arial", sans-serif;
   padding-top: 13px;
-  margin-left: 20px;
   padding-bottom: 10px;
+  margin-left: 20px;
+  height: 125px;
+}
+
+.center-fix {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
 }
 
 .input-form {
@@ -253,12 +279,14 @@
 
 .further::after {
   content: "";
-  border: 1.5px solid #68b738;
-  width: 134px;
+  border-bottom: 3px solid #68b738;
+  margin-bottom: 9px;
+  right: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: 23px;
+  left: 0;
   display: block;
-  margin-left: 165px;
-  margin-right: -30px;
-  margin-top: -12px;
 }
 
 .further {
@@ -266,15 +294,17 @@
   text-transform: none;
   font-weight: 100;
   padding-left: 19px;
-  padding-right: 20px;
   margin-bottom: 39px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
 }
 
 .label-check {
   margin-left: 65px;
   position: relative;
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
   cursor: pointer;
 }
 
@@ -287,7 +317,10 @@
 }
 
 .further-items {
-  padding-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  line-height: 1.33;
 }
 
 .label-check__input {
@@ -318,9 +351,15 @@
   font-family: "Oswald", "Arial", sans-serif;
   border: none;
   width: 280px;
-  margin-top: 19px;
-  margin-left: 21px;
+  margin-top: 18px;
   cursor: pointer;
+  margin-left: 20px;
+}
+
+.button-fix {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
 }
 
 .button-form:hover {
@@ -338,27 +377,42 @@
   text-transform: none;
   text-align: center;
   margin-top: 22px;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 }
 
 @media (min-width: @tablet-width) {
   .page-form {
     text-transform: uppercase;
-    max-width: 768px;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .form-name {
     font-size: 60px;
-    padding-left: 29px;
+    padding-left: 0;
+    width: 690px;
+    margin-top: 33px;
   }
 
   .appeal {
-    padding-left: 71px;
-    padding-top: 12px;
+    padding-top: 11px;
     font-size: 20px;
-    width: 360px;
+    width: 328px;
     line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 300px;
+  }
+
+  .long-border {
+    border: none;
+  }
+
+  .flex-form {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .quest {
@@ -367,13 +421,15 @@
     width: 631px;
     font-size: 20px;
     margin-top: 38px;
+    display: flex;
+    flex-direction: column;
   }
 
   .name-form {
     width: 537px;
     height: 48px;
     padding-left: 18px;
-    margin-left: 0;
+    margin-left: 10px;
   }
 
   .weight-form {
@@ -400,7 +456,12 @@
     padding: 0;
     padding-left: 25px;
     padding-right: 20px;
-    height: 194px;
+    height: 161px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 16px;
+    padding-bottom: 17px;
   }
 
   .radio-control::before {
@@ -412,7 +473,7 @@
   }
 
   .radio-control {
-    margin-top: 33px;
+    margin-top: 0;
     font-size: 20px;
     margin-left: 16px;
   }
@@ -424,37 +485,43 @@
 
   .contact {
     font-size: 36px;
-    width: 670px;
-    margin-left: 50px;
+    width: 100%;
     margin-top: 75px;
     height: 43px;
+    display: flex;
+    padding-left: 0;
   }
 
   .contact::after {
-    width: 142px;
-    display: inline-block;
+    content: "";
+    border-bottom: 3px solid #68b738;
+    width: calc(100% - 623px);
     margin: 0;
-    margin-bottom: 9px;
-    margin-left: 42px;
-    margin-right: -39px;
+    margin-left: 41px;
+    margin-right: auto;
+    margin-bottom: 18px;
+    display: block;
   }
 
   .contact::before {
     content: "";
-    border: 1.5px solid #68b738;
-    width: 28px;
-    display: inline-block;
-    margin-left: -70px;
+    border-bottom: 3px solid #68b738;
+    width: calc(100% - 738px);
+    margin-left: auto;
     margin-right: 39px;
-    margin-bottom: 9px;
+    margin-bottom: 18px;
+    display: block;
   }
 
   .subscribe {
-    margin-top: 54px;
+    margin-top: 56px;
     font-size: 20px;
-    width: 634px;
-    margin-left: 49px;
+    width: 637px;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .email {
@@ -465,7 +532,7 @@
     background-position: 512px 20px;
     margin-left: 13px;
     padding-top: 0;
-    margin-top: 14px;
+    margin-top: 13px;
   }
 
   .tel {
@@ -476,33 +543,38 @@
     margin-left: 11px;
     margin-top: 20px;
     background-position: 497px 17px;
+    padding-top: 0;
   }
 
   .comment {
     font-size: 36px;
-    width: 670px;
-    margin-left: 50px;
-    margin-top: 62px;
+    width: 100%;
+    margin-top: 61px;
     height: 43px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
   }
 
   .comment::after {
-    width: 464px;
-    display: inline-block;
+    border-bottom: 3px solid #68b738;
     margin: 0;
-    margin-bottom: 9px;
-    margin-left: 40px;
-    margin-right: -39px;
+    margin-bottom: 15px;
+    width: calc(100% - 155px);
+    margin-left: 39px;
+    margin-right: auto;
+    display: block;
   }
 
   .comment::before {
     content: "";
-    border: 1.5px solid #68b738;
-    width: 28px;
-    display: inline-block;
-    margin-left: -70px;
-    margin-right: 39px;
-    margin-bottom: 9px;
+    border-bottom: 3px solid #68b738;
+    width: calc(100% - 728px);
+    margin-left: auto;
+    margin-right: 38px;
+    margin-bottom: 15px;
+    display: block;
   }
 
   .comment-place {
@@ -514,46 +586,53 @@
     height: 149px;
   }
 
+  .center-fix {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .further {
     font-size: 36px;
-    width: 670px;
-    margin-left: 50px;
+    width: 100%;
     margin-top: 60px;
     height: 43px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
   }
 
   .further::after {
-    width: 431px;
-    display: inline-block;
+    width: calc(100% - 128px);
+    border-bottom: 3px solid #68b738;
     margin: 0;
-    margin-bottom: 9px;
+    margin-bottom: 15px;
     margin-left: 42px;
-    margin-right: -39px;
+    margin-right: auto;
+    display: block;
   }
 
   .further::before {
     content: "";
-    border: 1.5px solid #68b738;
-    width: 28px;
-    display: inline-block;
-    margin-left: -70px;
-    margin-right: 39px;
-    margin-bottom: 9px;
+    border-bottom: 3px solid #68b738;
+    width: calc(100% - 728px);
+    margin-left: auto;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    display: block;
   }
 
   .further-items {
     font-size: 20px;
-    margin-left: 60px;
-    margin-top: 53px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    margin-left: auto;
+    margin-top: 60px;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 660px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
+    width: 658px;
     justify-content: space-between;
+    margin-right: auto;
+    padding-left: 15px;
   }
 
   .label-check__new-input {
@@ -565,9 +644,9 @@
 
   .label-check {
     width: 178px;
-    margin-left: 68px;
+    margin-left: 66px;
     margin-right: 70px;
-    margin-bottom: 49px;
+    margin-bottom: 47px;
   }
 
   .button-form {
@@ -581,90 +660,119 @@
   }
 
   .footnote {
-    display: inline-block;
-    margin-left: 57px;
+
     font-size: 16px;
-    margin-top: 19px;
-    vertical-align: middle;
+    margin-top: 29px;
+    margin-left: 60px;
+  }
+
+  .button-fix {
+    display: flex;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .flex-form {
+    display: flex;
+    justify-content: space-between;
+    width: 1260px;
+  }
+
   .page-form {
-    max-width: 1300px;
-    padding-bottom: 37px;
+    width: 100%;
+    margin-bottom: 67px;
   }
 
   .form-name {
-    margin-left: 11px;
-    margin-top: 78px;
+    margin-top: 65px;
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .long-border {
+    width: 600px;
   }
 
   .appeal {
-    margin-left: 40px;
     padding: 0;
     margin-top: 52px;
+    margin-left: 40px;
+  }
+
+  .appeal-fix {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
   }
 
   .quest {
-    padding-left: 41px;
-    width: 600px;
+    padding-left: 21px;
+    width: 660px;
     padding-right: 0;
-    display: inline-block;
     margin-top: 21px;
+    height: 250px;
   }
 
   .name-form {
-    margin-left: 4px;
     width: 476px;
-    margin-right: 30px;
+    margin-left: 11px;
   }
 
   .weight-form {
-    margin-left: 12px;
+    margin-left: 14px;
     width: 445px;
-    margin-right: 30px;
   }
 
   .age-form {
     height: 48px;
     width: 406px;
+    margin-left: 11px;
   }
 
   .program-type {
     width: 523px;
-    height: 194px;
-    display: inline-block;
+
     margin: 0;
-    vertical-align: 19px;
-    margin-left: 45px;
     padding-left: 25px;
+    margin-top: 25px;
   }
 
   .contact {
     font-size: 36px;
-    width: 1161px;
-    margin-left: 20px;
-    margin-top: 69px;
+    width: 100%;
+    margin-left: auto;
+    margin-top: 41px;
     height: 43px;
   }
 
   .contact::after {
-    width: 704px;
+    width: calc(100% - 590px);
     margin: 0;
-    margin-bottom: 9px;
-    margin-left: 42px;
-    margin-right: -110px;
+    margin-bottom: 18px;
+    margin-right: auto;
+    margin-left: 39px;
   }
 
   .contact::before {
-    width: 70px;
-    margin-left: -112px;
+    width: calc(100% - 1300px);
+    margin-left: auto;
+    margin-bottom: 18px;
+    margin-right: 39px;
   }
 
   .subscribe {
-    margin-left: 21px;
-    width: 1220px;
+    width: 1219px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 55px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .email {
@@ -685,24 +793,26 @@
   }
 
   .comment {
-    width: 1170px;
-    margin-left: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 64px;
     height: 43px;
   }
 
   .comment::after {
-    width: 1038px;
-    display: inline-block;
+    width: 100%;
     margin: 0;
-    margin-bottom: 9px;
+    margin-bottom: 16px;
     margin-left: 40px;
-    margin-right: -120px;
+    margin-right: auto;
   }
 
   .comment::before {
-    width: 70px;
-    margin-left: -112px;
+    width: calc(100% - 1300px);
+    margin-left: auto;
+    margin-bottom: 16px;
+    margin-right: 39px;
   }
 
   .comment-place {
@@ -714,33 +824,50 @@
     height: 149px;
   }
 
+  .center-fix {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .further {
-    width: 1070px;
-    margin-left: 20px;
+    width: 100%;
     margin-top: 62px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .further::after {
-    width: 1011px;
-    margin-bottom: 9px;
+    width: calc(100% - 220px);
+    margin-bottom: 15px;
     margin-left: 42px;
-    margin-right: -199px;
+    margin-right: auto;
   }
 
   .further::before {
-    width: 70px;
-    margin-left: -112px;
+    width: calc(100% - 1300px);
+    margin-left: auto;
+    margin-bottom: 15px;
+    margin-right: 39px;
   }
 
   .further-items {
+    width: 1182px;
+    margin-top: 61px;
     margin-left: 30px;
-    width: 1181px;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 0;
   }
 
   .label-check {
     width: 138px;
     margin-left: 68px;
     margin-right: 0;
+  }
+
+  .button-fix {
+    width: 100%;
   }
 
   .button-form {
@@ -752,9 +879,9 @@
   }
 
   .footnote {
-    margin-left: 79px;
+    margin-left: 82px;
     font-size: 16px;
-    margin-top: 21px;
+    margin-top: 36px;
     vertical-align: middle;
   }
 }
