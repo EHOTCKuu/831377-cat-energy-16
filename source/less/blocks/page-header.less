@@ -1,13 +1,14 @@
 .page-header {
-  width: 320px;
   border-bottom: 1px solid #ededed;
 }
 
 .page-header__logo-image {
-  height: 37.598px;
-  width: 190.4px;
-  padding-top: 5px;
+  height: 37px;
+  width: 196px;
+  padding-top: 13px;
   cursor: pointer;
+  padding-left: 17px;
+  margin-bottom: 0;
 }
 
 .page-header__logo-image:hover {
@@ -28,13 +29,11 @@
   margin-right: 20px;
   margin-left: 56px;
   margin-top: 23px;
+  display: none;
 }
 
-.page-header__logo {
-  float: left;
-  width: 200px;
-  margin-left: 20px;
-  margin-top: 9px;
+.main-nav {
+  margin-top: -8px;
 }
 
 .main-nav__list {
@@ -44,6 +43,7 @@
   margin-left: 0;
   margin-bottom: 0;
   padding: 0;
+  width: 100%;
 }
 
 .page-link {
@@ -61,19 +61,18 @@
   opacity: 0.4;
 }
 
-
 .site-list__item {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   border-top: 1px solid #e6e6e6;
-  width: 320px;
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__logo-image {
     height: 57px;
-    width: 174px;
+    width: 179px;
     margin-top: -17px;
     margin-left: -10px;
   }
@@ -83,36 +82,33 @@
   }
 
   .page-header {
-    padding-top: 34px;
+    padding-top: 26px;
     width: 728px;
     padding-left: 20px;
     padding-right: 20px;
     border: none;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .main-nav__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    margin-left: 55px;
   }
 
   .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    width: 500px;
+    width: 452px;
     height: 30px;
-    padding-top: 10px;
+    padding-top: 26px;
+    justify-content: end;
+    margin-right: 2px;
   }
 
   .main-nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 440px;
     margin: 0;
@@ -154,7 +150,8 @@
   .page-header {
     width: 1300px;
     padding: 0;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 31px;
   }
 
@@ -166,21 +163,21 @@
   .page-header__logo-image {
     height: 63px;
     width: 204px;
-    padding-left: 31px;
+    padding-left: 48px;
     padding-top: 37px;
   }
 
+
   .main-nav {
-    width: 1039px;
+    width: 739px;
     height: 30px;
-    padding-top: 44px;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
+    padding-top: 51px;
     justify-content: flex-end;
   }
 
   .main-nav__list {
     width: 490px;
+    padding-right: 39px;
   }
 
   .link-index {
@@ -207,6 +204,6 @@
   }
 
   .site-list__item {
-    padding-bottom: 0;
+    padding-bottom: 2px;
   }
 }
