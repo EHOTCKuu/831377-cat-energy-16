@@ -22,7 +22,7 @@ gulp.task("css", function () {
     .pipe(sourcemap.init())
     .pipe(less())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer({grid: true})
     ]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
