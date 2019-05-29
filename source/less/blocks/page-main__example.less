@@ -358,9 +358,9 @@
     grid-template-columns: 600px 630px;
     grid-template-rows: 170px 145px 151px;
     grid-template-areas:
-      "green yellow"
-      "blue yellow"
-      "blue yellow";
+      "lime tomato"
+      "wheat tomato"
+      "wheat tomato";
     padding-bottom: 24px;
   }
 
@@ -380,23 +380,25 @@
   }
 
   .wrapper-flex {
-    grid-area: blue;
+    grid-area: wheat;
     flex-direction: column;
     height: 200px;
     width: 600px;
     justify-content: start;
     background-color: #f2f2f2;
+    display: block;
   }
 
   .example-text {
     margin: 0;
     padding: 0;
-    grid-area: green;
+    grid-area: lime;
     background-color: #f2f2f2;
     padding-top: 71px;
     padding-left: 40px;
     width: 435px;
     padding-right: 127px;
+    display: block;
   }
 
   .wrapper-example {
@@ -425,10 +427,11 @@
   }
 
   .presentation-wrapper {
-    grid-area: yellow;
+    grid-area: tomato;
     padding: 0;
     margin: 0;
     background-color: #f2f2f2;
+    display: block;
   }
 
   .button-slide {
