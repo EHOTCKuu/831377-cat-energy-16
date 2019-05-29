@@ -133,27 +133,32 @@
   width: 100%;
 }
 
+
 .contact {
-  font-size: 24px;
-  text-transform: none;
-  font-weight: 100;
-  padding-left: 19px;
-  margin-top: 28px;
+  margin-bottom: 28px;
   display: flex;
   justify-content: space-between;
+  margin-top: 27px;
+  position: relative;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1;
 }
 
-.contact::after {
-  content: "";
-  border-bottom: 3px solid #68b738;
-  margin-bottom: 31px;
-  right: 0;
-  width: calc(100% - 120px);
+.contact-fix {
+  background-color: white;
+  height: 40px;
+  width: 203px;
+  font-size: 24px;
+  text-transform: none;
+  font-weight: 100;
+  margin-left: 18px;
   margin-right: auto;
-  margin-left: 12px;
   display: block;
+  z-index: 2;
 }
+
 
 .subscribe {
   width: 281px;
@@ -199,25 +204,27 @@
 }
 
 .comment {
+  margin-bottom: 7px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 27px;
+  position: relative;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comment-fix {
+  background-color: white;
+  height: 40px;
+  width: 144px;
   font-size: 24px;
   text-transform: none;
   font-weight: 100;
-  padding-left: 19px;
-  margin-top: 26px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.comment::after {
-  content: "";
-  border-bottom: 3px solid #68b738;
-  width: 100%;
-  margin-bottom: 9px;
-  margin-left: 23px;
+  margin-left: 18px;
   margin-right: auto;
-  left: 0;
-  right: 0;
   display: block;
+  z-index: 2;
 }
 
 .comment-place {
@@ -277,27 +284,38 @@
   background-repeat: no-repeat;
 }
 
-.further::after {
-  content: "";
-  border-bottom: 3px solid #68b738;
-  margin-bottom: 9px;
-  right: 0;
-  width: 100%;
-  margin-right: auto;
-  margin-left: 23px;
-  left: 0;
+.line {
   display: block;
+  position: absolute;
+  border-bottom: 3px solid #68b738;
+  width: 200vh;
+  left: 100px;
+  z-index: 1;
+  top: 15px;
 }
 
 .further {
-  font-size: 24px;
-  text-transform: none;
-  font-weight: 100;
-  padding-left: 19px;
-  margin-bottom: 39px;
+  margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
+  position: relative;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.further-fix {
+  background-color: white;
+  height: 40px;
+  width: 166px;
+  font-size: 24px;
+  text-transform: none;
+  font-weight: 100;
+  margin-left: 18px;
+  margin-right: auto;
+  display: block;
+  z-index: 2;
 }
 
 .label-check {
@@ -483,38 +501,46 @@
     line-height: 30px;
   }
 
+  .line {
+    display: block;
+    position: absolute;
+    width: 200vh;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    top: 22px;
+    margin-left: -40%;
+    margin-right: -30%;
+  }
+
   .contact {
-    font-size: 36px;
-    width: 100%;
+    width: 768px;
     margin-top: 75px;
-    height: 43px;
+    height: 55px;
     display: flex;
     padding-left: 0;
-  }
-
-  .contact::after {
-    content: "";
-    border-bottom: 3px solid #68b738;
-    width: calc(100% - 623px);
-    margin: 0;
-    margin-left: 41px;
-    margin-right: auto;
-    margin-bottom: 18px;
-    display: block;
-  }
-
-  .contact::before {
-    content: "";
-    border-bottom: 3px solid #68b738;
-    width: calc(100% - 738px);
     margin-left: auto;
-    margin-right: 39px;
-    margin-bottom: 18px;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .contact-fix {
+    font-size: 36px;
+    height: 40px;
+    width: 550px;
+    padding-right: 4px;
+    text-transform: none;
+    font-weight: 100;
+    margin-left: 30px;
+    margin-right: auto;
     display: block;
+    z-index: 2;
+    margin-bottom: 6px;
+    padding-left: 39px;
   }
 
   .subscribe {
-    margin-top: 56px;
+    margin-top: 44px;
     font-size: 20px;
     width: 637px;
     text-align: right;
@@ -547,41 +573,40 @@
   }
 
   .comment {
-    font-size: 36px;
-    width: 100%;
-    margin-top: 61px;
-    height: 43px;
+    width: 768px;
+    margin-top: 62px;
+    height: 55px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
   }
 
-  .comment::after {
-    border-bottom: 3px solid #68b738;
-    margin: 0;
-    margin-bottom: 15px;
-    width: calc(100% - 155px);
-    margin-left: 39px;
+  .comment-fix {
+    font-size: 36px;
+    height: 40px;
+    width: 216px;
+    padding-right: 4px;
+    text-transform: none;
+    font-weight: 100;
+    margin-left: 30px;
     margin-right: auto;
     display: block;
+    z-index: 2;
+    margin-bottom: 6px;
+    padding-left: 39px;
   }
 
-  .comment::before {
-    content: "";
-    border-bottom: 3px solid #68b738;
-    width: calc(100% - 728px);
-    margin-left: auto;
-    margin-right: 38px;
-    margin-bottom: 15px;
-    display: block;
+  .line-comment {
+    top: 25px;
   }
 
   .comment-place {
     font-size: 20px;
     width: 601px;
     margin-left: 70px;
-    margin-top: 42px;
+    margin-top: 50px;
     padding-left: 18px;
     height: 149px;
   }
@@ -593,40 +618,39 @@
   }
 
   .further {
-    font-size: 36px;
-    width: 100%;
+    width: 768px;
     margin-top: 60px;
-    height: 43px;
+    height: 55px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
   }
 
-  .further::after {
-    width: calc(100% - 128px);
-    border-bottom: 3px solid #68b738;
-    margin: 0;
-    margin-bottom: 15px;
-    margin-left: 42px;
+  .further-fix {
+    font-size: 36px;
+    height: 40px;
+    width: 216px;
+    padding-right: 37px;
+    text-transform: none;
+    font-weight: 100;
+    margin-left: 30px;
     margin-right: auto;
     display: block;
+    z-index: 2;
+    margin-bottom: 6px;
+    padding-left: 39px;
   }
 
-  .further::before {
-    content: "";
-    border-bottom: 3px solid #68b738;
-    width: calc(100% - 728px);
-    margin-left: auto;
-    margin-right: 40px;
-    margin-bottom: 15px;
-    display: block;
+  .line-further {
+    top: 25px;
   }
 
   .further-items {
     font-size: 20px;
     margin-left: auto;
-    margin-top: 60px;
+    margin-top: 48px;
     display: flex;
     flex-wrap: wrap;
     width: 658px;
@@ -744,35 +768,33 @@
   }
 
   .contact {
-    font-size: 36px;
-    width: 100%;
+    width: 1300px;
+    margin-top: 42px;
+    height: 55px;
+    display: flex;
+    padding-left: 0;
     margin-left: auto;
-    margin-top: 41px;
-    height: 43px;
-  }
-
-  .contact::after {
-    width: calc(100% - 590px);
-    margin: 0;
-    margin-bottom: 18px;
     margin-right: auto;
-    margin-left: 39px;
+    margin-bottom: 10px;
   }
 
-  .contact::before {
-    width: calc(100% - 1300px);
-    margin-left: auto;
-    margin-bottom: 18px;
-    margin-right: 39px;
+  .contact-fix {
+    margin-left: 0;
+  }
+
+  .line {
+    width: 300vh;
+    margin-left: -100vh;
   }
 
   .subscribe {
     width: 1219px;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 55px;
+    margin-top: 42px;
     margin-right: auto;
     margin-left: auto;
+    padding-left: 21px;
   }
 
   .email {
@@ -793,33 +815,21 @@
   }
 
   .comment {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1300px;
     margin-top: 64px;
-    height: 43px;
+    height: 55px;
+    margin-bottom: 10px;
   }
 
-  .comment::after {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 16px;
-    margin-left: 40px;
-    margin-right: auto;
-  }
-
-  .comment::before {
-    width: calc(100% - 1300px);
-    margin-left: auto;
-    margin-bottom: 16px;
-    margin-right: 39px;
+  .comment-fix {
+    margin-left: 0;
   }
 
   .comment-place {
     font-size: 20px;
     width: 1190px;
     margin-left: 40px;
-    margin-top: 42px;
+    margin-top: 50px;
     padding-left: 18px;
     height: 149px;
   }
@@ -831,29 +841,19 @@
   }
 
   .further {
-    width: 100%;
+    width: 1300px;
     margin-top: 62px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 55px;
+    margin-bottom: 10px;
   }
 
-  .further::after {
-    width: calc(100% - 220px);
-    margin-bottom: 15px;
-    margin-left: 42px;
-    margin-right: auto;
-  }
-
-  .further::before {
-    width: calc(100% - 1300px);
-    margin-left: auto;
-    margin-bottom: 15px;
-    margin-right: 39px;
+  .further-fix {
+    margin-left: 0;
   }
 
   .further-items {
     width: 1182px;
-    margin-top: 61px;
+    margin-top: 48px;
     margin-left: 30px;
     margin-right: auto;
     padding-right: 20px;
